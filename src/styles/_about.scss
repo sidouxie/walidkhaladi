@@ -1,0 +1,20 @@
+.sec-grid {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-column-gap: 5px;
+    grid-row-gap: 5px;
+    margin-top: 5px;
+}
+
+.sec-img {
+    padding:2rem;
+
+    .subtitle{
+        font-weight: 400;
+        font-style: italic;
+    }
+}
+
+.sec-text {
+    margin: 2rem;
+}

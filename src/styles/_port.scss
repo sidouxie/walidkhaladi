@@ -1,0 +1,150 @@
+.grid {
+    
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    grid-column-gap: 5px;
+    grid-row-gap: 5px;
+    margin-top: 5px;
+
+    .port-item {
+        float: left;
+        height: 570px;
+        width: 420px;
+        display: block;
+        width: 100%;
+        max-width: 100%;
+        border-radius: 2px;
+        box-sizing: border-box;
+        margin: 0;
+        cursor: pointer;
+
+        &:nth-child(1) {
+            background-image: url('https://images.pexels.com/photos/842980/pexels-photo-842980.jpeg?auto=compress&cs=tinysrgb&h=650&w=940 1x, https://images.pexels.com/photos/842980/pexels-photo-842980.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940 2x');
+            background-position: center;
+            background-size: cover;
+        }
+        &:nth-child(2) {
+            background-image: url('https://images.pexels.com/photos/141651/people-portrait-child-poverty-141651.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940 2x');
+            background-position: center;
+            background-size: cover;
+        }
+        &:nth-child(3) {
+            background-image: url('https://images.unsplash.com/photo-1507126117511-e87526de90e2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1000&q=80');
+            background-position: center;
+            background-size: cover;
+        }
+        &:nth-child(4) {
+            background-image: url('https://images.pexels.com/photos/609549/pexels-photo-609549.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260 2520w');
+            background-position: center;
+            background-size: cover;
+        }
+        &:nth-child(5) {
+            background-image: url('https://images.pexels.com/photos/167669/pexels-photo-167669.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260 2520w');
+            background-position: center;
+            background-size: cover;
+        }
+        &:nth-child(6) {
+            background-image: url('https://images.pexels.com/photos/1542103/pexels-photo-1542103.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940 2x');
+            background-position: center;
+            background-size: cover;
+        }
+    }
+}
+
+.overlay, .overlay-2, .overlay-3 {
+    position: sticky;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: 250ms ease-in-out;
+    background: rgba(#2b2b2b, 0.6);
+
+    &:hover {
+        opacity: 1;
+    }
+}
+
+.content,.content-2,.content-3 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    font-weight: 100;
+}
+
+.port-item-2 {
+    float: left;
+    height: 570px;
+    width: 420px;
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    border-radius: 2px;
+    box-sizing: border-box;
+    margin: 0;
+    cursor: pointer;
+
+    &:nth-child(1) {
+        background-image: url('https://images.pexels.com/photos/11392/pexels-photo-11392.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260 2520w');
+        background-position: center;
+        background-size: cover;
+    }
+
+    &:nth-child(2) {
+        background-image: url('https://scontent-mrs1-1.cdninstagram.com/vp/ae23fe508e666998af6f816bc70e9313/5D183712/t51.2885-15/e35/27879623_151564312209881_7454750391792566272_n.jpg?_nc_ht=scontent-mrs1-1.cdninstagram.com');
+        background-position: center;
+        background-size: cover;
+    }
+}
+
+.port-item-3 {
+    float: left;
+    height: 570px;
+    width: 420px;
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    border-radius: 2px;
+    box-sizing: border-box;
+    margin: 0;
+    cursor: pointer;
+
+    &:nth-child(1) {
+        background-image: url('https://images.pexels.com/photos/1675869/pexels-photo-1675869.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260');
+        background-position: center;
+        background-size: cover;
+    }
+
+    &:nth-child(2) {
+        background-image: url('https://images.pexels.com/photos/948873/pexels-photo-948873.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260');
+        background-position: center;
+        background-size: cover;
+    }
+    &:nth-child(3) {
+        background-image: url('https://images.pexels.com/photos/247885/pexels-photo-247885.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260');
+        background-position: center;
+        background-size: cover;
+    }
+    &:nth-child(4) {
+        background-image: url('https://images.pexels.com/photos/874158/pexels-photo-874158.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260');
+        background-position: center;
+        background-size: cover;
+    }
+    &:nth-child(5) {
+        background-image: url('https://scontent-mrs1-1.cdninstagram.com/vp/c489ab14fa2517fc72d3956602e05ccb/5D21AC2A/t51.2885-15/e35/38815722_2097773850488432_5430128762945536000_n.jpg?_nc_ht=scontent-mrs1-1.cdninstagram.com');
+        background-position: center;
+        background-size: cover;
+    }
+    &:nth-child(6) {
+        background-image: url('https://scontent-mrs1-1.cdninstagram.com/vp/df194c49b9ac413bf53addfc78aa2faa/5D10FB89/t51.2885-15/e35/38685955_1859324150814555_4356253099174658048_n.jpg?_nc_ht=scontent-mrs1-1.cdninstagram.com');
+        background-position: center;
+        background-size: cover;
+    }
+}

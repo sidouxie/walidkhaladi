@@ -1,0 +1,40 @@
+$primary-color: #0D0A0C;
+$secondary-color: #05A3A7;
+
+
+//Typography
+@font-face {
+    font-family: 'Roboto', sans-serif;
+    src: url(../utiles/Roboto-Regular.ttf);
+  }
+
+  @font-face {
+    font-family: 'Playfair Display', serif;
+    src: url(../utiles/PlayfairDisplay-Bold.ttf);
+  }
+
+
+//media query mixins
+@mixin mediaSm {
+    @media screen and (max-width:500px) {
+        @content;
+    }
+}
+
+@mixin mediaMd {
+    @media screen and (max-width:768px) {
+        @content;
+    }
+}
+
+@mixin mediaLg {
+    @media screen and (min-width:769px) and (max-width:1170px) {
+        @content;
+    }
+}
+
+@mixin mediaXl {
+    @media screen and (min-width:1171px) {
+        @content;
+    }
+}

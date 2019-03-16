@@ -1,0 +1,395 @@
+@import 'config';
+@import 'menu';
+@import 'port';
+@import 'fash';
+@import 'about';
+@import 'contact';
+@import 'utils';
+
+
+html {
+    background-color: #fff;
+}
+
+body {
+    ::selection {
+        background: rgba($secondary-color, 0.6);
+        color: #232323;
+    }
+}
+
+* {
+    font-family: 'Roboto', sans-serif;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    font-family: 'Playfair Display', serif !important;
+}
+
+nav li {
+    display: inline-block;
+    margin: 1em;
+}
+
+nav a {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 900;
+    text-decoration: none;
+    font-size: .8rem;
+    padding: .5rem;
+    color:$primary-color;
+    &:hover {
+    color: $secondary-color;
+    transition: all 250ms ease-in-out;
+    }
+
+}
+
+main {
+    padding-top: 20vh;
+    text-align: center;
+}
+
+.grid {
+    
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    grid-column-gap: 5px;
+    grid-row-gap: 5px;
+    margin-top: 5px;
+
+    .item {
+        float: left;
+        height: 570px;
+        width: 420px;
+        display: block;
+        width: 100%;
+        max-width: 100%;
+        border-radius: 2px;
+        box-sizing: border-box;
+        margin: 0;
+        cursor: pointer;
+
+        .overlay {
+            position: sticky;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            height: 100%;
+            width: 100%;
+            opacity: 0;
+            transition: 250ms ease-in-out;
+            background: rgba(#2b2b2b, 0.6);
+        
+            &:hover {
+                opacity: 1;
+            }
+        }
+     
+        &:nth-child(1) {
+            background-image: url('https://scontent-mrs1-1.cdninstagram.com/vp/415b76577e5e9e3c6c24b7e5f4f8debd/5D1AF6CC/t51.2885-15/e35/52001907_452034302001876_5929456280046271852_n.jpg?_nc_ht=scontent-mrs1-1.cdninstagram.com');
+            background-position: center;
+            background-size: cover;
+        }
+        &:nth-child(2) {
+            background-image: url('https://scontent-mrs1-1.cdninstagram.com/vp/ee04a9c1f88e882398b191a4d6b851a0/5D0716B3/t51.2885-15/e35/39108026_272758713549093_8438653010472599552_n.jpg?_nc_ht=scontent-mrs1-1.cdninstagram.com');
+            background-position: center;
+            background-size: cover;
+        }
+        &:nth-child(3) {
+            background-image: url('https://scontent-mrs1-1.cdninstagram.com/vp/4cf524b063d2f25992fbc13526d62f61/5D10DF71/t51.2885-15/e35/28427604_155762975110208_4978789058038726656_n.jpg?_nc_ht=scontent-mrs1-1.cdninstagram.com');
+            background-position: center;
+            background-size: cover;
+        }
+        &:nth-child(4) {
+            background-image: url('https://scontent-mrs1-1.cdninstagram.com/vp/a93ce7bd1d3c56007c84823c3f5029ff/5D17C2F4/t51.2885-15/e35/38278959_1073287576162476_7078891803650293760_n.jpg?_nc_ht=scontent-mrs1-1.cdninstagram.com');
+            background-position: center;
+            background-size: cover;
+        }
+        &:nth-child(5) {
+            background-image: url('https://scontent-mrs1-1.cdninstagram.com/vp/af2e37e4cb400799f6b1b34910a1f297/5D033B74/t51.2885-15/e35/38769096_315879209151365_8875035878318145536_n.jpg?_nc_ht=scontent-mrs1-1.cdninstagram.com');
+            background-position: center;
+            background-size: cover;
+        }
+        &:nth-child(6) {
+            background-image: url('https://scontent-mrs1-1.cdninstagram.com/vp/cf873111e3563cbb7f5c0897f91398db/5D1F02B8/t51.2885-15/e35/36148209_216358625752392_7162348889431867392_n.jpg?_nc_ht=scontent-mrs1-1.cdninstagram.com');
+            background-position: center;
+            background-size: cover;
+        }
+    }
+}
+
+.content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    font-weight: 100;
+}
+
+.content-2 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    font-weight: 100;
+}
+
+.content-3 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    font-weight: 100;
+}
+
+.grid-2 {
+    display: grid;
+    grid-template-columns: 66% 33%;
+    grid-column-gap: 5px;
+    grid-row-gap: 5px;
+    margin-top: 5px;
+
+    .item-2{
+        float: left;
+        height: 570px;
+        width: 780px;
+        display: block;
+        width: 100%;
+        max-width: 100%;
+        border-radius: 2px;
+        box-sizing: border-box;
+        margin: 0;
+        cursor: pointer;
+
+        .overlay-2 {
+            position: sticky;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            height: 100%;
+            width: 100%;
+            opacity: 0;
+            transition: 250ms ease-in-out;
+            background: rgba(#2b2b2b, 0.6);
+        
+            &:hover {
+                opacity: 1;
+            }
+        }
+
+        &:nth-child(1) {
+            background-image: url('https://scontent-mrs1-1.cdninstagram.com/vp/f22cab78a8704fc18a675bfd17fb43ba/5D25A9A9/t51.2885-15/e35/36916691_303893886818464_6346932915741392896_n.jpg?_nc_ht=scontent-mrs1-1.cdninstagram.com');
+            background-position: center;
+            background-size: cover;
+        }
+
+        &:nth-child(2) {
+            background-image: url('https://scontent-mrs1-1.cdninstagram.com/vp/3822ee51ca3b18997ce4d151d16af996/5D199CE4/t51.2885-15/e35/34563060_2025927031069459_3888632435969097728_n.jpg?_nc_ht=scontent-mrs1-1.cdninstagram.com');
+            background-position: center;
+            background-size: cover;
+        }
+    }
+}
+
+.grid-3 {
+    
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    grid-column-gap: 5px;
+    grid-row-gap: 5px;
+    margin-top: 5px;
+
+    .item-3 {
+        float: left;
+        height: 570px;
+        width: 420px;
+        display: block;
+        width: 100%;
+        max-width: 100%;
+        border-radius: 2px;
+        box-sizing: border-box;
+        margin: 0;
+        cursor: pointer;
+
+        .overlay-3 {
+            position: sticky;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            height: 100%;
+            width: 100%;
+            opacity: 0;
+            transition: 250ms ease-in-out;
+            background: rgba(#2b2b2b, 0.6);
+        
+            &:hover {
+                opacity: 1;
+            }
+        }
+     
+        &:nth-child(1) {
+            background-image: url('https://scontent-mrs1-1.cdninstagram.com/vp/f8e3f5bdbb713c619de42c44d81a8b7e/5D14AC19/t51.2885-15/e35/35617183_242537199676217_4593137175662428160_n.jpg?_nc_ht=scontent-mrs1-1.cdninstagram.com');
+            background-position: center;
+            background-size: cover;
+        }
+        &:nth-child(2) {
+            background-image: url('https://scontent-mrs1-1.cdninstagram.com/vp/23d9178cbee94cb228da3d07e4675578/5D1F65D1/t51.2885-15/e35/35575503_610838432636352_6521793197708935168_n.jpg?_nc_ht=scontent-mrs1-1.cdninstagram.com');
+            background-position: center;
+            background-size: cover;
+        }
+        &:nth-child(3) {
+            background-image: url('https://scontent-mrs1-1.cdninstagram.com/vp/ead31e3eb37f309c1052c8604a597668/5D29D54B/t51.2885-15/e35/28430200_212574089295443_6818732865593802752_n.jpg?_nc_ht=scontent-mrs1-1.cdninstagram.com');
+            background-position: center;
+            background-size: cover;
+        }
+        &:nth-child(4) {
+            background-image: url('https://scontent-mrs1-1.cdninstagram.com/vp/4f9ccf0e42020651e0de1dea0753aea7/5D175A34/t51.2885-15/e35/52740132_1909295865860531_4270148239603121453_n.jpg?_nc_ht=scontent-mrs1-1.cdninstagram.com');
+            background-position: center;
+            background-size: cover;
+        }
+        &:nth-child(5) {
+            background-image: url('https://scontent-mrs1-1.cdninstagram.com/vp/5e7a24e1bfeb9af4b5f6dffce177402d/5D0EDE53/t51.2885-15/e35/34756288_625511284460957_45820691093651456_n.jpg?_nc_ht=scontent-mrs1-1.cdninstagram.com');
+            background-position: center;
+            background-size: cover;
+        }
+        &:nth-child(6) {
+            background-image: url('https://scontent-mrs1-1.cdninstagram.com/vp/1cbc44cfafea659430ed308eb3137f4d/5D099D14/t51.2885-15/e35/32053519_196395834331057_1072365836737445888_n.jpg?_nc_ht=scontent-mrs1-1.cdninstagram.com');
+            background-position: center;
+            background-size: cover;
+        }
+    }
+}
+
+
+// Footer
+.container {
+    width:100%;
+    margin:0 auto;
+}
+
+footer {
+    font-family: sans-serif;
+    color: #232323;
+    text-align: center;
+    padding: 1em 0;
+}
+
+.footer-social{
+    display: inline-flex;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.footer-nav--item, .footer-social__item {
+    display: inline-block;
+    margin: 1em;
+}
+
+footer a {
+    font-weight: 400;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: .8rem;
+    padding: .5em;
+    color: $primary-color;
+}
+
+footer a:hover,
+footer a:focus {
+    color: $secondary-color;
+    transition: initial;
+}
+
+footer img {
+    width: 30%;
+}
+
+.ligne {
+    width: 60%;
+    margin: 1em auto;
+    border: 0.5px solid rgba(#6b6b6b, 0.3);
+}
+
+.copyright {
+    font-size: .6em;
+    line-height: 1.5;
+    margin-bottom: 1rem;
+}
+
+.follow {
+    margin-top: 1.45rem;
+    font-weight: 700;
+}
+
+@import 'mobile';
+
+
+
+
+// Animation text Effects
+
+@keyframes fadeInOut {
+    0% {
+      position: inherit;
+      opacity: 0;
+      left: -5rem;
+    }
+
+    50% {
+      opacity: 0.5;
+    }
+
+    100% {
+      opacity: 1;
+      left: 0;
+    }
+  }
+
+  @keyframes rightFadeInOut {
+    0% {
+      position: inherit;
+      opacity: 0;
+      right: -5rem;
+    }
+  
+    50% {
+      opacity: 0.5;
+    }
+  
+    100% {
+      opacity: 1;
+      right: 0;
+    }
+  }
+
+.animation-box{
+    position: relative;
+}
+
+.text-effect-right {
+    position: inherit;
+    opacity: 1;
+    animation-name: rightFadeInOut;
+    animation-duration: 2500ms;
+}
+
+.text-effect {
+    position: inherit;
+    opacity: 1;
+    animation-name: fadeInOut;
+    animation-duration: 2500ms;
+}
