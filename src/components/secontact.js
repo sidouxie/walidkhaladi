@@ -4,7 +4,8 @@ const Secontact = () => (
     <section>
         <div className="container-contact100">
             <div className="wrap-contact100">
-                <form className="contact100-form validate-form" name="contact" method="POST" data-netlify="true">
+                <form className="contact100-form validate-form" name="contact" method="post" data-netlify="true" netlify-honeypot="bot-field" data-netlify-recaptcha="true" hidden>
+                <input type="hidden" name="form-name" value="contact" />
                     <span className="contact100-form-title">
                         Envoie-nous un message
                     </span>
@@ -21,7 +22,7 @@ const Secontact = () => (
                     </div>
 
                     <label className="label-input100" for="email">Entrer votre Email *</label>
-                    <div className="wrap-input100 validate-input" data-validate = "Valid email is required: ex@abc.xyz">
+                    <div className="wrap-input100 validate-input" data-validate="Valid email is required: ex@abc.xyz">
                         <input id="email" className="input100" type="text" name="email" placeholder="example@email.com" />
                         <span className="focus-input100"></span>
                     </div>
@@ -33,7 +34,7 @@ const Secontact = () => (
                     </div>
 
                     <label className="label-input100" for="message">Message *</label>
-                    <div className="wrap-input100 validate-input" data-validate = "Message is required">
+                    <div className="wrap-input100 validate-input" data-validate="Message is required">
                         <textarea id="message" className="input100" name="message" placeholder="Écrivez-nous un message"></textarea>
                         <span className="focus-input100"></span>
                     </div>
