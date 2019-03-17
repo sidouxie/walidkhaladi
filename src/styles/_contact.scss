@@ -301,6 +301,10 @@ textarea.input100 {
   flex-wrap: wrap;
   justify-content: center;
   padding-top: 23px;
+
+  &.container-contact100-form-btn a{
+    text-decoration-line: none;
+  }
 }
 
 .contact100-form-btn {

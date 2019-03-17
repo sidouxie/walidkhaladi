@@ -67,59 +67,59 @@ export default class Acontacter extends React.Component {
               <input name="bot-field" onChange={this.handleChange} />
             </label>
           </p>
-          <p className="label-input100">
-          <label>
+          
+          
             <label className="label-input100" for="first-name">votre Prénom *</label>
-                 <div className="wrap-input100 rs1-wrap-input100 validate-input" data-validate="Type first name">
+                 <div className="wrap-input100 validate-input" data-validate="Type first name">
                     <input id="first-name" className="input100" type="text" name="name" placeholder="Prénom" onChange={this.handleChange} />
                     <span className="focus-input100"></span>
                  </div>
-            </label>
-          </p>
+            
+          
 
-          <p className="label-input100">
-          <label>
+          
+          
             <label className="label-input100" for="last-name">votre Nom *</label>
-                 <div className="wrap-input100 rs2-wrap-input100 validate-input" data-validate="Type last name">
+                 <div className="wrap-input100 validate-input" data-validate="Type last name">
                     <input className="input100" type="text" name="name" placeholder="Nom" onChange={this.handleChange} />
                     <span className="focus-input100"></span>
                  </div>
-            </label>
-          </p>
+            
+          
 
-          <p className="label-input100">
-          <label>
-            <label className="label-input100" for="last-name">votre Email *</label>
+          
+          
+            <label className="label-input100" for="email">votre Email *</label>
               <div className="wrap-input100 validate-input" data-validate="Valid email is required: ex@abc.xyz">
                 <input className="input100" type="email" name="email" placeholder="example@email.com" onChange={this.handleChange} />
                 <span className="focus-input100"></span>
               </div>
-            </label>
-          </p>
+            
+          
 
-          <p className="label-input100">
-            <label>
+          
+            
             <label className="label-input100" for="phone">votre Numéro *</label>
                  <div className="wrap-input100">
                     <input id="phone" className="input100" type="text" name="phone" placeholder="+1 800 000000" onChange={this.handleChange} />
                     <span className="focus-input100"></span>
                  </div>
-            </label>
-          </p>
+           
+          
 
-          <p className="label-input100">
-            <label>
+          
+            
             <label className="label-input100" for="message">Message *</label>
                  <div className="wrap-input100 validate-input" data-validate="Message is required">
                     <textarea id="message" className="input100" type="text" name="message" placeholder="Écrivez-nous un message" onChange={this.handleChange}></textarea>
                     <span className="focus-input100"></span>
                  </div>
-            </label>
-          </p>
+            
+          
 
           <p className="container-contact100-form-btn">
             <div className="container-contact100-form-btn">
-                <button className="contact100-form-btn" type="submit">Send</button>
+                <button className="contact100-form-btn" type="submit">Envoyer</button>
             </div>
           </p>
         </form>

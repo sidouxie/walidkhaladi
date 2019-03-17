@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Montserrat:400,600,700');
-@import url('https://fonts.googleapis.com/css?family=Catamaran:400,800');
+
 .error-container {
   text-align: center;
   font-size: 106px;
@@ -18,7 +17,7 @@
   background:
     linear-gradient(140deg, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.07) 43%, transparent 44%, transparent 100%),
     linear-gradient(105deg, transparent 0%, transparent 40%, rgba(0, 0, 0, 0.06) 41%, rgba(0, 0, 0, 0.07) 76%, transparent 77%, transparent 100%),
-    linear-gradient(to right, #d89ca4, #e27b7e);
+    linear-gradient(to right, $color5, $color4);
 }
 .error-container > span.four:before,
 .error-container > span.four:after {
@@ -35,7 +34,7 @@
   background:
     linear-gradient(128deg, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.07) 40%, transparent 41%, transparent 100%),
     linear-gradient(116deg, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.07) 50%, transparent 51%, transparent 100%),
-    linear-gradient(to top, #99749D, #B895AB, #CC9AA6, #D7969E, #E0787F);
+    linear-gradient(to top, $color4, $color5, $color5, $color5, $color5);
 }
 .error-container > span.four:after {
   width: 137px;
@@ -43,7 +42,7 @@
   transform: rotate(-49.5deg);
   left: -18px;
   bottom: 36px;
-  background: linear-gradient(to right, #99749D, #B895AB, #CC9AA6, #D7969E, #E0787F);
+  background: linear-gradient(to right,$color4, $color5, $color5, $color5, $color5);
 }
 
 .error-container > span.zero {
@@ -52,7 +51,7 @@
   height: 156px;
   border-radius: 999px;
   background: linear-gradient(-45deg, transparent 0%, rgba(0, 0, 0, 0.06) 50%,  transparent 51%, transparent 100%),
-    linear-gradient(to top right, #99749D, #99749D, #B895AB, #CC9AA6, #D7969E, #ED8687, #ED8687);
+    linear-gradient(to top right,$color4, $color5, $color5, $color5, $color5);
   overflow: hidden;
   animation: bgshadow 5s infinite;
 }
@@ -110,18 +109,7 @@
     -moz-box-sizing: border-box;
     box-sizing: border-box;
 }
-body {
-  background-color: #FDFAF5;
-  margin-bottom: 50px;
-}
-html, button, input, select, textarea {
-    font-family: 'Montserrat', Helvetica, sans-serif;
-    color: #bbb;
-}
-h1 {
-  text-align: center;
-  margin: 30px 15px;
-}
+
 .zoom-area { 
   max-width: 490px;
   margin: 30px auto 30px;
