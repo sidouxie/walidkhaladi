@@ -3,7 +3,8 @@ module.exports = {
     title: `Walid Khaladi - Photographe Professionnel à Alger`,
     description: `Walid Khaladi est un photographe de mode et de célébrités basé à Alger qui réalise des portraits de magazines, des couvertures de livres, des affiches de théâtre, des photographies publicitaires et des look-books. Basé à Alger.`,
     author: `@walidkhaladi`,
-    url: 'www.walidkhaladi.com',
+    url: 'www.walidkhaladi.tk',
+    siteUrl: `https://www.walidkhaladi.tk`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -30,6 +31,7 @@ module.exports = {
     },
     `gatsby-plugin-sass`,
     'gatsby-plugin-styled-components',
+    `gatsby-plugin-sitemap`,
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // 'gatsby-plugin-offline',
