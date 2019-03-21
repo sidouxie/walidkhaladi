@@ -1,7 +1,8 @@
 import React from "react"
+import PropTypes from "prop-types"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import Portimg from "../components/portimg"
+import PortraitImages from "../components/imagesportrait"
 
 
 const Portrait = () => (
@@ -14,7 +15,12 @@ const Portrait = () => (
                 <figure className="text-effect" style={{fontWeight:'300',fontSize:'0.9rem'}}>Pierre Corneille</figure>
             </section>
         </div>
-        <Portimg></Portimg>
+        <PortraitImages />
     </Layout>
 )
+
+Layout.propTypes = {
+    children: PropTypes.node.isRequired,
+  }
+
 export default Portrait

@@ -6,8 +6,8 @@ import logo from "../images/logo-wk.svg"
 const Header = ({ siteTitle }) => (
   <header>
       <nav>
-        <input type="checkbox" id="nav" class="hidden"></input>
-              <label for="nav" class="nav-btn">
+        <input type="checkbox" id="nav" className="hidden"></input>
+              <label htmlFor="nav" className="nav-btn">
                   <i></i>
                   <i></i>
                   <i></i>
@@ -26,10 +26,10 @@ const Header = ({ siteTitle }) => (
         <div className="nav-wrapper">
           <ul style={{margin:'0', padding:'0', listStyle:'none'}}>
             <li><Link to="/">Accueil</Link></li>
-            <li><Link to="/portrait/">Portrait</Link></li>
-            <li><Link to="/fashion/">Fashion</Link></li>
-            <li><Link to="/about/">à Propos</Link></li>
-            <li><Link to="/contact/">Contact</Link></li>
+            <li><Link to="/portrait">Portrait</Link></li>
+            <li><Link to="/nature">Nature</Link></li>
+            <li><Link to="/about">à Propos</Link></li>
+            <li><Link to="/contact">Contact</Link></li>
           </ul>
         </div>
       </nav>

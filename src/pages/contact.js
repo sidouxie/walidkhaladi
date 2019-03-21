@@ -64,7 +64,7 @@ export default class Contact extends React.Component {
           onSubmit={this.handleSubmit}
           noValidate
         >
-
+        
                 <span className="contact100-form-title">
                         Envoie-nous un message
                 </span>
@@ -77,38 +77,25 @@ export default class Contact extends React.Component {
               <input name="bot-field" onChange={this.handleChange} />
             </label>
           </p>
-          
-          
+
             <label className="label-input100" for="first-name">votre Prénom *</label>
                  <div className="wrap-input100 validate-input" data-validate="Type first name">
                     <input id="first-name" className="input100" type="text" name="name" placeholder="Prénom" required onChange={this.handleChange} />
                     <span className="focus-input100"></span>
                  </div>
-            
-          
 
-          
-          
             <label className="label-input100" for="last-name">votre Nom *</label>
                  <div className="wrap-input100 validate-input" data-validate="Type last name">
                     <input className="input100" type="text" name="name" placeholder="Nom" required onChange={this.handleChange} />
                     <span className="focus-input100"></span>
                  </div>
-            
-          
 
-          
-          
             <label className="label-input100" for="email">votre Email *</label>
               <div className="wrap-input100 validate-input" data-validate="Valid email is required: ex@abc.xyz">
                 <input className="input100" type="email" name="email" placeholder="example@email.com" required onChange={this.handleChange} />
                 <span className="focus-input100"></span>
               </div>
-            
-          
 
-          
-            
             <label className="label-input100" for="phone">votre Numéro *</label>
                  <div className="wrap-input100">
                     <input id="phone" className="input100" type="text" name="phone" placeholder="+1 800 000000" required onChange={this.handleChange} />
