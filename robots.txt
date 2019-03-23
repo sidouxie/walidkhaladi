@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+Sitemap: https://www.walidkhaladi.tk/sitemap.xml
+Host: https://www.walidkhaladi.tk
